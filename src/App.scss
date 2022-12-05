@@ -1,0 +1,291 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Merienda', cursive;
+}
+
+header {
+	width: 1400px;
+	position: absolute;
+	left: 50%;
+	top: 40px;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 40px;
+
+	.beens-block {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+		.beens {
+			width: 35px;
+			height: 35px;
+			background-image: url(../public/images/coffee-beans.png);
+			background-size: contain;
+		}
+	}
+
+	.btns {
+		color: white;
+		transition: 500ms;
+		cursor: pointer;
+
+		&:hover {
+			color: #c4c4c4;
+		}
+	}
+}
+
+.firstScreen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 80vh;
+	background-image: url('../public/images/screeone.png');
+	background-color: main-color;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.heading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 20px;
+
+		h1 {
+			color: white;
+			font-size: 40px;
+			font-weight: bold;
+		}
+
+		p {
+			color: white;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		button {
+			all: unset;
+			border: 1px solid white;
+			padding: 10px 20px;
+			color: white;
+			cursor: pointer;
+		}
+
+	}
+
+}
+
+
+.screenTwo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	p {
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	img {
+		filter: invert(100%);
+	}
+}
+
+.sectionThree {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+
+	width: 100%;
+	height: 50vh;
+	background-image: url('../public/images/screenthree.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.wrapper {
+		width: 70%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.item-component {
+			width: 220px;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			align-items: flex-end;
+			gap: 10px;
+			background-color: rgba(255, 255, 255, .65);
+			border-radius: 8px;
+		}
+
+	}
+
+}
+
+footer {
+	margin: 50px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+
+	.beens-block {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+		.beens {
+			width: 35px;
+			height: 35px;
+			background-image: url(../public/images/coffee-beans.png);
+			background-size: contain;
+			filter: invert(100%);
+		}
+	}
+
+	.btns {
+		transition: 500ms;
+		cursor: pointer;
+
+		&:hover {
+			color: #c4c4c4;
+		}
+	}
+}
+
+.footer-block {
+	position: relative;
+
+	.beensImg {
+		position: absolute;
+		left: 50%;
+		bottom: -45px;
+		transform: translateX(-50%);
+		filter: invert(100%);
+	}
+}
+
+.bigwrap {
+	position: relative;
+
+	header {
+		position: relative;
+		filter: invert(100%);
+		margin-bottom: 70px;
+	}
+}
+
+.container {
+	width: 1390px;
+	margin: 0 auto;
+
+	.twotop {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+
+		.twoleft {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+
+			input {
+				all: unset;
+				box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+				border-radius: 4px;
+				width: 180px;
+				height: 30px;
+				font-size: 12px;
+				padding: 0 5px;
+
+				&::placeholder {
+					text-align: center;
+				}
+			}
+		}
+
+		.tworight {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+
+			.wrap {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+
+				button {
+					all: unset;
+					background: #FFFFFF;
+					box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+					border-radius: 4px 0px 0px 4px;
+					padding: 7px 20px;
+					cursor: pointer;
+					transition: 500ms;
+
+					&:hover {
+						background-color: #c4c4c450;
+					}
+				}
+			}
+		}
+	}
+}
+
+.two-grid {
+	display: grid;
+	margin: 60px auto 0;
+	width: fit-content;
+	grid-template-columns: repeat(3, 220px);
+	grid-auto-rows: 260px;
+	grid-gap: 60px 70px;
+
+	.two-gridblock {
+		border-radius: 8px;
+		box-shadow: 0 0 8px #c4c4c4;
+		padding: 23px;
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		align-items: flex-end;
+
+		img {
+			width: 167px;
+			height: 115px;
+			object-fit: contain;
+		}
+
+		.twotext {
+			font-size: 14px;
+		}
+
+		.twoprice {
+			font-weight: 700;
+			font-size: 14px;
+		}
+	}
+}
